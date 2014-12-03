@@ -1,0 +1,93 @@
+/* 
+ * index.css -- style
+ *
+ * Codes from Jack Works(zjwpeter@gmail.com)
+ * And idea is from Scott Shen(scottshen0515@gmail.com)
+ * 
+ * Vola Studio 2014.
+ *
+ * 
+ */
+body{
+	font-family: "Segoe UI", Monaco, Roboto;
+    font-weight: 100;
+	margin: 0;
+}
+svg#game_env {
+	width: 350px;
+	height: 350px;
+}
+circle.game_target, circle.game_source {
+	fill-opacity: 0;
+	stroke-width: 1;
+}
+circle.game_target {
+	stroke: #6F07D6;
+}
+circle.game_source {
+	stroke: #30B1F3;
+	font-size: 0px;
+}
+.stage {
+    height: 350px;
+    width: 525px;
+    overflow: hidden;
+    display: none;
+}
+.menu {
+    color: gray;
+    -webkit-transition: 0.25s;
+}
+.menu.active {
+    font-size: 24px;
+    border: 3px purple solid;
+    border-bottom: none;
+    border-top: none;
+    color: black;
+}
+.menu.dis1 {
+    font-size:18px;
+}
+.game_empty {
+    display: inline-block;
+    width: 525px;
+    overflow: hidden;
+}
+.game_enviroment {
+    float: left;
+}
+.game_board {
+    float: right;
+    width: 175px;
+    overflow: hidden;
+}
+p.game_board_tile {
+    color: white;
+    margin: 0;
+    padding: 0.75em 0.75em;
+    width: 100%;
+}
+.game_board_title {
+    background: #7c4dff;
+    font-size: 1.5em;
+}
+a {
+    text-decoration: none !important;
+    color: #5677fc !important;
+}
+.game_stage_about .header {
+    font-size: 2em;
+}
+.game_stage_about .game_board_tile {
+    background: #03a9f4;
+}
+.game_stage_about > .game_board_tile > a{
+    color: white !important;
+}
+.game_stage_about p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    list-style-type: none;
+}

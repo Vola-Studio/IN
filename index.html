@@ -1,0 +1,98 @@
+﻿<!--
+    index.html -- main page
+
+    Codes from Jack Works(zjwpeter@gmail.com)
+    And idea is from Scott Shen(scottshen0515@gmail.com)
+    
+    Vola Studio 2014.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css" />
+		<title></title>
+	</head>
+	<body>
+        <div class="game_empty">
+            <div class="game_stage_menu stage" style="display: block;">
+                <div style="width: 350px; height: 350px; float: left;">
+                    <img src="" width="350" height="350" />
+                </div>
+                <div style="width: 175px; height: 150px; float: right; padding: 100px 0px; text-align: center;">
+                    <p class="menu dis1" data-choose="about" id="menu_about">About</p>
+                    <p class="menu active" data-choose="inf" id="menu_inf">Infinity Mode</p>
+                    <p class="menu dis1" data-choose="classic" id="menu_classic" style="text-decoration: line-through;">Classic Mode</p>
+                    <p class="menu" data-choose="settings" id="menu_settings" style="text-decoration: line-through;">Settings</p>
+                </div>
+            </div>
+            <div class="game_stage_about stage">
+                <p class="game_board_title game_board_tile" style="background: #03a9f4;">
+                    In<a href="#" style="float: right;margin-right: 1.75em;" class="backToMenu">back to menu</a>
+                </p>
+                <div style="float: left; width: 50%;">
+                    <p class="game_board_tile" style="background: #673ab7;">How to play :</p>
+                    <p>Click in time</p>
+                    <p>Get a high score</p>
+                    <p>Never stop</p>
+                    <p>Designed by <a href="mailto:vola.studio.msw@gmail.com">Vola Studio</a></p>
+                </div>
+                <div style="float:right; width: 50%;">
+                    <p class="game_board_tile" style="background: #ff5722;">Designers</p>
+                    <p>Jack Works (Coder)</p>
+                    <p>Scott Shen (UI Designer)</p>
+                </div>
+            </div>
+            <div class="game_stage_gaming stage">
+                <div class="game_enviroment">
+                    <svg id="game_env">
+                        <circle cx="175" cy="175" r="100" class="game_target" id="game_tg"></circle>
+                        <circle cx="175" cy="175" r="10" class="game_source" id="game_sc"></circle>
+                    </svg>
+                </div>
+                <div class="game_tips" style="position: absolute;">
+                    <p class="game_board_tile tips" style="background:#673ab7;">In</p>
+                </div>
+                <div class="game_board">
+                    <div class="game_board_infobox">
+                        <p class="game_board_tile start" style="background: #3f51b5;">Start</p>
+                        <p class="game_board_tile mode" style="background: #5677fc;">Mode : <span>Infinity</span></p>
+                        <p class="game_board_tile score" style="background: #00bcd4;">Score: <span>123</span></p>
+                        <p class="game_board_tile exit backToMenu" style="background: #14e715;">Exit</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="game_stage_settings stage">
+
+            </div>
+        </div>
+		<!--
+        		<div id="game_board_mask">
+		    	<div class="game_menu">
+			    	<span class="board_msg" id="game_title">In</span><br />
+				    <span>Score : </span><span class="board_points">0</span><span> points</span><br />
+    				<input type="button" value="Classic Mode" class="start cls" /><br />
+	    			<input type="button" value="Infinity Mode" class="start inf" /><br />
+		    		<input type="button" value="Settings" class="settings" />
+			    </div>
+    			<div class="game_settings">
+	    			<span class="board_msg" id="settings_title">Settings</span><br />
+		    		<div>
+			    		Tolerance: <input type="range" max="40" min="5" value="20" class="settings_tol" /><br />
+				    	Speed: <input type="range" max="1200" min="800" value="900" class="settings_spe" />
+    				</div>
+	    			<input type="button" value="Apply" class="settings_btn settings_apply" />
+		    		<input type="button" value="Cancel" class="settings_btn" />
+			    </div>
+		    </div>
+            <span style="left: 140px; top: 130px; display: none; position: absolute;color:red;font-size:30px;" id="msg"></span>
+        -->
+		<script src="jquery.js"></script>
+		<script src="event.js"></script>
+		<script src="data.js"></script>
+		<script src="logic.js"></script>
+		<script src="points.js"></script>
+		<script src="UI.js"></script>
+	</body>
+</html>
