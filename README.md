@@ -1,4 +1,4 @@
 IN
 ==
 
-A game
+A musicless music game.
